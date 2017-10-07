@@ -203,7 +203,8 @@ a {
 
 .fr_button.fr-text p {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  line-height: 2.2;
   color: white
 }
 
@@ -564,9 +565,9 @@ p.fr_text_bright_right {
   margin-top: 2rem;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 20px;
+  padding-top: 5px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   padding-left: 20px;
   min-height: 3rem;
   max-width: 300px
@@ -3543,4 +3544,13 @@ p.fr_text_bright_right {
 
 .noBorderSubmit {
   border: none;
+}
+
+.fr_text_136 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.fr_button.fr-text p {
+	font-size: 1rem;
+	line-height: 2.2;
 }
