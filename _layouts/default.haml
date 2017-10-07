@@ -1,0 +1,92 @@
+!!!
+%html{:lang => "en", :prefix => "og: http://ogp.me/ns#"}
+  %head
+    %meta{:charset => "UTF-8"}/
+    %link{:href => "http://purl.org/dc/elements/1.1/", :rel => "schema.DC"}/
+    %title EDUshifts movement
+    %meta{:content => "EDUshifts movement", :name => "DC.title"}/
+    %meta{:content => "EDUshifts movement", :property => "og:title"}/
+    %meta{:content => "EDUshifts movement", :name => "twitter:title"}/
+    %meta{:content => "/images/uploads/og_image_EDUshifts_background.png", :property => "og:image"}/
+    %meta{:content => "/images/uploads/og_image_EDUshifts_background.png", :name => "twitter:image"}/
+    %meta{:content => "website", :property => "og:type"}/
+    %meta{:content => "EDUshifts movement", :property => "og:site_name"}/
+    %meta{:content => "en", :name => "DC.language", :scheme => "ISO639-1"}/
+    %link{:href => "assets/css/base.css", :rel => "stylesheet"}/
+    %link{:href => "assets/css/style.css", :rel => "stylesheet"}/
+    %script{:src => "assets/vendor/jquery.min.js", :type => "text/javascript"}
+    %script{:src => "assets/vendor/noframework.waypoints.min.js", :type => "text/javascript"}
+    %script{:src => "assets/vendor/jquery.magnific-popup.min.js", :type => "text/javascript"}
+    %script{:src => "assets/js/responsive-nav.js", :type => "text/javascript"}
+    %script{:src => "assets/vendor/swiper.jquery.js", :type => "text/javascript"}
+    %script{:src => "assets/js/form-submit.js", :type => "text/javascript"}
+    %script{:src => "assets/js/popup.js", :type => "text/javascript"}
+    %script{:src => "assets/js/reveal-animation.js", :type => "text/javascript"}
+    %script{:src => "assets/js/bg-videos.js", :type => "text/javascript"}
+    %script{:src => "assets/js/background-parallax.js", :type => "text/javascript"}
+    %script{:src => "assets/js/page-script.js", :type => "text/javascript"}
+    :javascript
+      var fonts = {
+          "Montserrat": {
+              "family": "Montserrat",
+              "source": "google",
+              "subsets": [
+                  "latin"
+              ],
+              "variants": [
+                  "700",
+                  "regular"
+              ]
+          },
+          "Roboto": {
+              "family": "Roboto",
+              "source": "google",
+              "subsets": [
+                  "cyrillic",
+                  "cyrillic-ext",
+                  "greek",
+                  "greek-ext",
+                  "latin",
+                  "latin-ext",
+                  "vietnamese"
+
+              ],
+              "variants": [
+                  "100",
+                  "100italic",
+                  "300",
+                  "300italic",
+                  "500",
+                  "500italic",
+                  "700",
+                  "700italic",
+                  "900",
+                  "900italic",
+                  "italic",
+                  "regular"
+              ]
+          }
+      };
+    %script{:src => "assets/vendor/webfontloader.js", :type => "text/javascript"}
+    %script{:src => "assets/js/fontloader.js", :type => "text/javascript"}
+    %meta{:content => "images/uploads/favicon-ms-144.png", :name => "msapplication-TileImage"}/
+    %link{:href => "images/uploads/favicon-apple-152.png", :rel => "apple-touch-icon"}/
+    %link{:href => "images/uploads/favicon.png", :rel => "icon", :type => "image/png"}/
+    %meta{:content => "IE=Edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    / Piwik
+    :javascript
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//analytics.desagaz.com/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '8']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    / End Piwik Code
+  %body
+    {{ content }}
