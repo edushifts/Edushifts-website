@@ -3,11 +3,16 @@ GEM
   specs:
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.11.1)
     colorator (1.1.0)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.5)
+    execjs (2.7.0)
     ffi (1.9.18)
     forwardable-extended (2.6.0)
     haml (5.0.3)
@@ -25,6 +30,9 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 3)
       safe_yaml (~> 1.0)
+    jekyll-coffeescript (1.0.2)
+      coffee-script (~> 2.2)
+      coffee-script-source (~> 1.11.1)
     jekyll-feed (0.9.2)
       jekyll (~> 3.3)
     jekyll-haml (0.1.5)
@@ -64,6 +72,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.6.0)
+  jekyll-coffeescript
   jekyll-feed (~> 0.6)
   jekyll-haml
   jekyll-livereload

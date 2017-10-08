@@ -2,11 +2,17 @@
 ---
 
 // Color pallete
+$black: #000
 $white: #fff
 $dark-blue: #0f2a60
+$orange: #ffc60b
+$dark-grey: #333333
+$ice: #f1f1f1
+$pink: #e7015e
 
 // Typography
 $font-family-sans-serif:  "Roboto", Helvetica, Arial, sans-serif
+$font-size-base: 18px
 
 // Bootstrap variables
 $navbar-default-bg: $dark-blue
@@ -15,17 +21,136 @@ $navbar-default-color: $white
 $navbar-default-link-color: $white
 $navbar-default-link-hover-color: $white
 $navbar-default-link-active-color: $white
-$navbar-height: 80px
+$navbar-height: 72px
+$line-height-base: 1.8
+
+$font-size-h1: round(($font-size-base * 2.5))
+$font-size-h2: round(($font-size-base * 2))
+$font-size-h3: round(($font-size-base * 1.5))
+$font-size-h4: round(($font-size-base * 1.25))
+$font-size-h5: $font-size-base !default
+$font-size-h6: round(($font-size-base * 0.85))
+
 
 @import 'vendor/bootstrap-sass/assets/stylesheets/bootstrap'
 
 // Main CSS
 body
   padding-top: 80px
+  font-weight: 300
+
+h1, h2, h3, h4, h5
+  font-family: Montserrat
+  font-weight: 700
+
+h5
+  text-transform: uppercase
+
+section
+  padding-top: 80px
+  padding-bottom: 80px
+
+.jumbotron
+  color: $white
+  h1
+    font-size: 48px
+
+  .btn-primary
+    font-weight: 100
+
+.main-jumbotron
+  position: relative
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{ site.baseurl }}../images/edushifts-crew.png)
+  background-size: cover
+  background-position-y: -80px
+  height: 80vh
+
+  .text
+    text-align: center
+    position: absolute
+    bottom: 20vh
+    width: 100%
+
+    p
+      font-weight: 300
+
+.about-the-book-initiative, .book-content
+  background-color: $dark-blue
+  color: $white
+
+.fund-one-copy
+  padding: 120px 0
+  background-repeat: no-repeat
+  background-image: linear-gradient(rgba(195, 78, 41, 0.71), rgba(195, 78, 41, 0.71)), url({{ site.baseurl }}../images/world.png)
+  background-position: center center
+  background-size: cover
+
+  h3
+    margin: 0 auto
+    padding-bottom: 40px
+    max-width: 600px
+
+.outlook-to-the-future
+  background-color: $ice
+
+.get-in-touch
+  background-color: $orange
+
+.navbar
+  .btn-primary
+    background-color: $orange
+    color: $dark-grey
+
+.the-game
+  background-color: $ice
+
+.the-game-is-simple
+  background-color: $orange
 
 .navbar-brand
   padding-top: 16px
   padding-bottom: 16px
 
-.core-values svg
-  width: 50px
+.bullets .icon
+  width: 60px
+  height: 60px
+
+.icon
+  width: 40px
+  height: 40px
+
+.icon-small
+  width: 32px
+  height: 32px
+
+.author
+  height: 650px
+
+.pink-color
+  color: $pink
+  fill: $pink
+
+.social-networks-section
+  .social-networks
+    max-width: 600px
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+    margin: 0 auto
+
+    a
+      flex: flex-grow
+      padding: 32px 0
+      color: $black
+      font-weight: 300
+      font-family: Montserrat
+      font-size: 16px
+
+.copyright-footer
+  &, a
+    font-family: Arial
+    background-color: $pink
+    padding: 20px 0
+    font-size: 14px
+    color: $white !important
+    letter-spacing: 2px

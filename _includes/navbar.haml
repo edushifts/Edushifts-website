@@ -1,28 +1,28 @@
 %nav.navbar.navbar-fixed-top.navbar-default
   .container
     .navbar-header
-      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#main-menu", "data-toggle" => "collapse", :type => "button"}
+      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#main-menu", "data-toggle" => "collapse", type: "button"}
         %span.sr-only Toggle navigation
         %span.icon-bar
         %span.icon-bar
         %span.icon-bar
-      %a.navbar-brand{:href => "#"}
-        %img{:src => "assets/images/edushifts-logo-white-small.png"}
+      %a.navbar-brand{href: "//edushifts.world"}
+        %img{src: "assets/images/edushifts-logo-white.png", width: '100', height: '50'}
 
     #main-menu.navbar-collapse.collapse
       %ul.nav.navbar-nav.navbar-right
         %li
-          %a{:href => "#"} Game
+          %a{href: "#game"} Game
         %li
-          %a{:href => "#"} The Future
+          %a{href: "#future"} Future
         %li
-          %a{:href => "#"} About the Book
+          %a{href: "#about-the-book"} About the Book
         %li
-          %a{:href => "#"} Authors
+          %a{href: "#authors"} Authors
         %li
-          %a{:href => "#"} Content
+          %a{href: "#content"} Content
         %li
-          %a{:href => "#"} Contact
+          %a{href: "#contact"} Contact
         %li
           .navbar-form
-            %a.btn.btn-primary{:href => "#"} Fund a book
+            %a.btn.btn-lg.btn-primary{href: "#"} Fund a book
