@@ -1,75 +1,34 @@
 body {
-  background-color: #ffc50c; }
+  background-color: #ffc50c;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-weight: 300;
+  color: #2d2d2d; }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-family: Montserrat;
   font-weight: 600;
   font-size: 2.8rem;
   line-height: 1.2;
   margin-top: 2.5rem;
-  margin-bottom: 1.25rem;
-  color: #2d2d2d; }
+  margin-bottom: 1.25rem; }
 
 h2 {
-  font-family: Montserrat;
-  font-weight: 600;
-  font-size: 2rem;
-  line-height: 1.2;
-  text-align: center;
-  margin-top: 2.5rem;
-  margin-bottom: 1.25rem;
-  color: #2d2d2d; }
+  font-size: 2rem; }
 
 h3 {
-  font-family: Montserrat;
-  font-weight: 600;
-  font-size: 1.4rem;
-  line-height: 1.4;
-  margin-top: 2.5rem;
-  margin-bottom: 1.25rem;
-  color: #2d2d2d; }
+  font-size: 1.4rem; }
 
 h4 {
-  font-family: Montserrat;
-  font-weight: 600;
-  font-size: 1.3rem;
-  line-height: 1.4;
-  margin-top: 2.5rem;
-  margin-bottom: 1.25rem;
-  color: #2d2d2d; }
+  font-size: 1.3rem; }
 
 h5 {
-  font-family: Montserrat;
-  font-weight: 600;
-  font-size: 0.7rem;
-  line-height: 1.6;
-  text-transform: uppercase;
-  letter-spacing: 0.07rem;
-  margin-top: 2.5rem;
-  margin-bottom: 1.25rem;
-  color: #2d2d2d; }
+  font-size: 0.7rem; }
 
 h6 {
-  font-family: Montserrat;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 1.4;
-  margin-top: 2.5rem;
-  margin-bottom: 1.25rem;
-  color: #2d2d2d; }
-
-p {
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  color: #2d2d2d; }
+  font-size: 1.2rem; }
 
 ul li, ol li {
-  font-family: Roboto;
-  font-weight: 300;
   font-size: 1rem;
   line-height: 1.8;
   margin-top: 1.25rem;
@@ -77,8 +36,6 @@ ul li, ol li {
   color: #2d2d2d; }
 
 blockquote {
-  font-family: Roboto;
-  font-weight: 300;
   font-size: 1.2rem;
   line-height: 1.6;
   margin-top: 2.5rem;
@@ -91,8 +48,6 @@ a {
   color: inherit; }
 
 .fr_nav_item_bright_right_center {
-  font-family: Roboto;
-  font-weight: 300;
   font-size: 16px;
   line-height: 1.35em;
   text-align: center;
@@ -101,8 +56,6 @@ a {
   color: white; }
 
 .fr_button-1 {
-  font-family: Roboto;
-  font-weight: 300;
   font-size: 16px;
   line-height: 1.35em;
   text-align: center;
@@ -116,7 +69,6 @@ a {
     color: #0f2a60; }
 
 .fr_text_bright_center {
-  font-family: monserat;
   font-weight: 200;
   font-size: 4rem;
   text-align: center;
@@ -146,8 +98,6 @@ a {
     color: white; }
 
 .fr_button {
-  font-family: Montserrat;
-  font-weight: 300;
   font-size: 16px;
   text-align: center;
   text-decoration: inherit;
@@ -197,7 +147,6 @@ a {
   fill: #e7015e; }
 
 .fr_text_large_dark_center.fr-text p {
-  font-weight: 300;
   font-size: 2em;
   line-height: 1.2;
   text-align: center;
@@ -1098,7 +1047,6 @@ a {
 
 .fr_text_69, .fr_text_70, .fr_text_71, .fr_text_72 {
   font-family: Montserrat;
-  font-weight: 300;
   text-align: center; }
 
 .fr_text_73 {
@@ -1199,8 +1147,6 @@ a {
   float: none;
   display: block;
   width: 90%;
-  font-family: Roboto;
-  font-weight: 300;
   vertical-align: top;
   margin-top: 3rem;
   margin-right: auto;

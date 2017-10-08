@@ -1,0 +1,28 @@
+%nav.navbar.navbar-default
+  .container
+    .navbar-header
+      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#main-menu", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "#"}
+        %img{:src => "assets/images/edushifts-logo-white-small.png"}
+
+    #main-menu.navbar-collapse.collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{:href => "#"} Game
+        %li
+          %a{:href => "#"} The Future
+        %li
+          %a{:href => "#"} About the Book
+        %li
+          %a{:href => "#"} Authors
+        %li
+          %a{:href => "#"} Content
+        %li
+          %a{:href => "#"} Contact
+        %li
+          .navbar-form
+            %a.btn.btn-primary{:href => "#"} Fund a book

@@ -12,8 +12,10 @@
 <meta content='website' property='og:type'>
 <meta content='EDUshifts movement' property='og:site_name'>
 <meta content='en' name='DC.language' scheme='ISO639-1'>
-<link href='assets/css/base.css' rel='stylesheet'>
-<link href='assets/css/style.css' rel='stylesheet'>
+<!-- %link{:href => "assets/css/base.css", :rel => "stylesheet"}/ -->
+<!-- %link{:href => "assets/vendor/bootstrap/dist/css/bootstrap.css", :rel => "stylesheet"}/ -->
+<!-- %link{:href => "assets/css/style.css", :rel => "stylesheet"}/ -->
+<link href='assets/css/app.css' rel='stylesheet'>
 <script src='assets/vendor/jquery.min.js' type='text/javascript'></script>
 <script src='assets/vendor/noframework.waypoints.min.js' type='text/javascript'></script>
 <script src='assets/vendor/jquery.magnific-popup.min.js' type='text/javascript'></script>
@@ -92,48 +94,48 @@
 <!-- End Piwik Code -->
 <script src="http://127.0.0.1:35729/livereload.js"></script></head>
 <body>
-<div class='b-content'>
-<div class='fr-widget fr-container fr_nav_with_logo' id='nav_with_logo'>
-<div class='fr-widget fr-navigation fr-navigation-active fr_navigation_dark_with_logo_2' id='navigation_dark_with_logo_2'>
-<a class='fr-widget fr-img fr_imagewidget fr-link' href='#hero_vertically_centered' id='imagewidget'>
-<img src='assets/images/thumbnail/edushifts-logo-white.png'>
-</a>
-<div class='fr-widget fr-navigation-toggle fr_mobile_toggle_2' id='mobile_toggle_2'>
-<div class='fr-widget fr-svg fr_hamburger_icon_2' id='hamburger_icon_2'>
-<div class='fr-svg-inner'>
-<svg version='1.1' viewbox='0 0 73.2 61.6' x='0' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' y='0'>
-<path d='M4.2 8.6h64.7c2.3 0 4.2-1.9 4.2-4.3C73.2 1.9 71.3 0 68.9 0H4.2C1.9 0 0 1.9 0 4.3 0 6.7 1.9 8.6 4.2 8.6zM68.9 26.5H4.2C1.9 26.5 0 28.4 0 30.8c0 2.4 1.9 4.3 4.2 4.3h64.7c2.3 0 4.2-1.9 4.2-4.3C73.2 28.4 71.3 26.5 68.9 26.5zM68.9 53H4.2C1.9 53 0 54.9 0 57.3c0 2.4 1.9 4.3 4.2 4.3h64.7c2.3 0 4.2-1.9 4.2-4.3C73.2 54.9 71.3 53 68.9 53z'></path>
-</svg>
-</div>
-</div>
-</div>
-<div class='fr-widget fr-container fr_items_2' id='items_2'>
-<a class='fr-widget fr-text fr-wf fr_nav_item_bright_right_center fr_text01 fr-link' href='#content_25' id='text01'>
-<div class='fr-text'>Game</div>
-</a>
-<a class='fr-widget fr-text fr-wf fr_nav_item_bright_right_center fr_text02 fr-link' href='#content_2' id='text02'>
-<div class='fr-text'>Future</div>
-</a>
-<a class='fr-widget fr-text fr-wf fr_nav_item_bright_right_center fr_text03_2 fr-link' href='#text_styles_default' id='text03_2'>
-<div class='fr-text'>About the Book</div>
-</a>
-<a class='fr-widget fr-text fr-wf fr_nav_item_bright_right_center fr_text03_3 fr-link' href='#crew_1' id='text03_3'>
-<div class='fr-text'>Authors</div>
-</a>
-<a class='fr-widget fr-text fr-wf fr_nav_item_bright_right_center fr_text03_4 fr-link' href='#text_styles_bright' id='text03_4'>
-<div class='fr-text'>Content</div>
-</a>
-<a class='fr-widget fr-text fr-wf fr_nav_item_bright_right_center fr_text03_4 fr-link' href='#footer_4' id='text03_4'>
-<div class='fr-text'>Contact</div>
-</a>
-<a class='fr-widget fr-text fr-wf fr_button-1 fr_sign_up_button_2 fr-widget-hover-opacity-60 fr-link' href='https://www.generosity.com/education-fundraising/edushifts-now-collective-book-initiative' id='sign_up_button_2' target='_blank'>
-<div class='fr-text'>
-<p>Fund a book!</p>
-</div>
+<nav class='navbar navbar-default'>
+<div class='container'>
+<div class='navbar-header'>
+<button aria-expanded='false' class='navbar-toggle collapsed' data-target='#main-menu' data-toggle='collapse' type='button'>
+<span class='sr-only'>Toggle navigation</span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+<span class='icon-bar'></span>
+</button>
+<a class='navbar-brand' href='#'>
+<img src='assets/images/edushifts-logo-white-small.png'>
 </a>
 </div>
+<div class='navbar-collapse collapse' id='main-menu'>
+<ul class='nav navbar-nav navbar-right'>
+<li>
+<a href='#'>Game</a>
+</li>
+<li>
+<a href='#'>The Future</a>
+</li>
+<li>
+<a href='#'>About the Book</a>
+</li>
+<li>
+<a href='#'>Authors</a>
+</li>
+<li>
+<a href='#'>Content</a>
+</li>
+<li>
+<a href='#'>Contact</a>
+</li>
+<li>
+<div class='navbar-form'>
+<a class='btn btn-primary' href='#'>Fund a book</a>
+</div>
+</li>
+</ul>
 </div>
 </div>
+</nav>
 <div class='fr-widget fr-container fr_hero_vertically_centered' id='hero_vertically_centered'>
 <div class='fr-widget fr-container fr_vertically_centered_block' id='vertically_centered_block'>
 <div class='fr-widget fr-text fr-wf fr_text_bright_center fr_text_27' id='text_27'>
@@ -1050,7 +1052,6 @@ http://bit.ly/fund-edushifts
 <a class='fr-widget fr-text fr-wf fr_text_72 fr-link' href='http://www.instagram.com/edushifts/' id='text_72' target='_blank'>
 <div class='fr-text'>Instagram</div>
 </a>
-</div>
 </div>
 </div>
 <div class='fr-copyright-footer'>
