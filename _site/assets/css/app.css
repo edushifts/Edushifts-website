@@ -5798,7 +5798,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 body {
-  padding-top: 80px;
+  padding-top: 60px;
   font-weight: 300; }
 
 h1, h2, h3, h4, h5 {
