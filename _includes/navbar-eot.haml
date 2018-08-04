@@ -1,0 +1,23 @@
+%nav.navbar.navbar-fixed-top.navbar-default
+  .container
+    .navbar-header
+      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#main-menu", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{href: "//edushifts.world"}
+        %img{src: "assets/images/edushifts-logo-white.png", width: '100', height: '50'}
+
+    #main-menu.navbar-collapse.collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{href: "#about"} The tour
+        %li
+          %a{href: "#details"} Details/date
+        %li
+          %a{href: "#our-mission"} Our Mission
+        %li
+          %a{href: "#team"} Team
+        %li
+          %a{href: "#contact"} Contact

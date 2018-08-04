@@ -5852,17 +5852,17 @@ section {
   background-color: #f1f1f1; }
 
 .get-in-touch {
-  background-color: #ffc60b; }
+  background-color: #f7941e; }
 
 .navbar .btn-primary {
-  background-color: #ffc60b;
+  background-color: #f7941e;
   color: #333333; }
 
 .the-game {
   background-color: #f1f1f1; }
 
 .the-game-is-simple {
-  background-color: #ffc60b; }
+  background-color: #f7941e; }
 
 .navbar-brand {
   padding-top: 16px;
@@ -5883,9 +5883,45 @@ section {
 .author {
   height: 650px; }
 
+.inline {
+  display: inline; }
+
 .pink-color {
   color: #e7015e;
   fill: #e7015e; }
+
+.green-color {
+  color: #20c350;
+  fill: #20c350; }
+
+.orange-color {
+  color: #f7941e;
+  fill: #f7941e; }
+
+.text-green {
+  color: #20c350; }
+
+.text-orange {
+  color: #f7941e; }
+
+.text-pink {
+  color: #e7015e; }
+
+.text-black {
+  color: #000000; }
+
+.text-icon {
+  display: inline;
+  width: 20px; }
+
+.border-black {
+  border-color: #000000; }
+
+.border-left-dotted {
+  border-left: 1px dotted; }
+
+.img-small {
+  max-width: 30%; }
 
 .social-networks-section .social-networks {
   max-width: 600px;
@@ -5896,7 +5932,7 @@ section {
   .social-networks-section .social-networks a {
     flex: flex-grow;
     padding: 32px 0;
-    color: #000;
+    color: #000000;
     font-weight: 300;
     font-family: Montserrat;
     font-size: 16px; }
@@ -5908,3 +5944,22 @@ section {
   font-size: 14px;
   color: #fff !important;
   letter-spacing: 2px; }
+
+.main-jumbotron.eot {
+  position: relative;
+  background: url(../images/edushifts-on-tour.png) no-repeat center;
+  background-color: white;
+  background-size: contain;
+  height: 80vh;
+  margin-top: 2em; }
+
+.eot > h2 {
+  text-transform: uppercase;
+  color: #000000; }
+
+.text-right-art {
+  text-align: right;
+  color: #20c350;
+  font-size: calc(1.6em + 1vw); }
+  .text-right-art .big {
+    font-size: calc(2.3em + 2vw); }

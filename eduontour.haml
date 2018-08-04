@@ -1,0 +1,181 @@
+---
+layout: default
+---
+{% include navbar-eot.haml %}
+%section.background-eot
+  %section.main-jumbotron.eot
+    .text.bg-eot-main
+      %h1.eot.hide Edushifts On Tour
+      %h2.eot.hide Presente
+
+  %section.eot.about-eot#about
+    .container
+      .row
+        .col-sm-6
+          %h2.text-right-art
+            EDUshifts
+            %br/
+            OnTour 
+            %br>/
+            Executive 2018
+            %br/
+            %span.big
+              Brasil
+              %span
+
+        .col-sm-6.border-left-dotted
+          %h2.eot
+            %span.text-green Ready to step out
+            %br/
+            of our reality?
+          %hr.border-black
+          :markdown
+            Our society is undergoing an intense transformation. A growing number of citizens is challenging the status quo and adopting sustainable ways of living, working and learning.
+
+            We invite conscious decision makers and enablers to explore and suppoort cutting edge solutions while experiencing the dynamic ecosystem of Brazil. EDUshiftsOnTour Executive - this journey will transform the way you collaborate and create impact.
+
+
+  %section.eot.details-eot#details
+    .container
+      .row
+        .col-md-6.col-sm-12
+          %h2.eot
+            What is in there for
+            %span.text-green you
+            ?
+          :markdown
+            STEP OUT of your demanding environment. Are you chasing a new world while being caught in old paradigms and minsets? Learn how to create impact beyond traditional paths and investments.
+
+            EXPERIENCE how to set up exponetial projects while taking care of your personal needs. Learn to use your superpowers and adapt to a new reality.
+
+            COLABORATE with a new generation of thought leaders and upcoming game changers. Follow your call and enjoy heartful and mindful relationships to yourself and people around you!
+
+            GET TO KNOW Social Innovation projects and inspiring learning communities in two contrasting hotspots: the "Valley Wisdowm" Alto Paraiso and metropolitan São Paulo. The future is now!
+
+        .col-md-6.col-sm-12
+          %h2.eot
+            %span.text-green INFORMATION
+            &
+            %span.text-green DETAILS
+          :markdown
+            **Dates:** 10 days in the first half of 2018. We invite a small group of 9 people. Once we have the right participants. we will find together a convenient date.
+            **Locations:** Alto Paraíso and São Paulo.
+
+            **Your investment** EUR 7.599 - EUR 9.599.*
+            **Included in this lifetime adventure:**
+            - Accommodation, Breakfast and Dinner, local transportation in Brazil for all group activities. __Not included__ : flights to Brazil.
+            - Curated impact journey & deep personal learning experience. Topics: Transformation in Education. Social Innovation and Community building.
+
+            *We use a Pay-it-Forward and Solidarity Economy Model for promising talents and social entrepreneurs will join the tour.*
+
+        .col-md-6.col-sm-12
+          %h2
+            Ready for an
+            %span.text-green Adventure of a lifetime
+            ?
+          Find out this experience is a food fit for you. Reach out for Phillipe Greier
+          %span.text-orange.strong philippe@present-e.org
+
+  %section.eot.details-eot#our-mission
+    .container
+      .row
+        .col-md-6.col-sm-12
+          %h2.eot 
+            WHAT IS OUR
+            %span.text-green MISSION
+            ?
+          :markdown
+            We will create a documentary about the transformation in education in our society. Brazil has been a melting Pot for social movements and Progressive education.
+
+            Join us and create a new reality. Let's tell a different story full of hope inspiring while setting up the foundation for a global movement!
+
+        .col-md-6.col-sm-12
+          %h2.eot Who We Are?
+          :markdown
+            Present is a non-profit foundation committed empower our society for a conscious evolution. Since 2011 we have been running EDUshiftsOnTour in multiple regions: Europe, Midddle East and South America. More information at
+          %img.text-icon{src: 'assets/images/icons/web-icon.png'}
+          %a.text-orange.bold{href: "www.present-e.org"} www.present-e.org
+          %img.img-responsive.img-small{src: 'assets/images/present-logo.png'}
+
+  %section.eot.destaque-img
+    %img.img-responsive{src: 'assets/images/EDUshiftsOnTourX18.png', alt: 'pictures of the group during past eduontour'}
+
+  %section.eot.book-authors#team
+    .container
+      .text-center
+        %h2.eot
+          Get to know our
+          %span.text-green team
+        
+      .row
+      {% for team in site.data.eot_team %}
+        .author.text-center.col-md-6
+          %img.img-square(src="assets/images/team/{{ team.name | slugify }}.jpg" width='150' height='150')
+          %h5.orange-color {{ team.name }}
+          :markdown
+            {{ team.bio }}
+
+          {% if team.twitter %}
+          %a(href="{{ team.twitter }}")
+            %img.icon.orange-color(src="assets/images/icons/twitter-orange.svg")
+          {% endif %}
+
+          {% if team.linkedin %}
+          %a(href="{{ team.linkedin }}")
+            %img.icon.orange-color(src="assets/images/icons/linkedin-orange.svg")
+          {% endif %}
+
+        {% endfor %}
+
+  %section.eot.get-news
+    .container
+      %h2.text-center Get news in your mailbox
+      .row
+        .col-sm-4.col-sm-offset-4
+          %form(action="//world.us16.list-manage.com/subscribe/post?u=4fb16c76a798800052ceeadfe&amp;id=84eb5b8ebd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="")
+
+            .form-group
+              %input.form-control{name: "EMAIL", placeholder: "you@example.com", type: "email", value: ""}
+              %div{"aria-hidden" => "true", style: "position: absolute; left: -5000px;"}
+            .form-group
+              %input.btn.btn-primary.form-control{name: "subscribe", type: "submit", value: "Subscribe now"}
+
+  %section.get-in-touch#contact
+    .container
+      .row
+        .col-sm-5
+          %h4 Get in touch with us
+
+          %p
+            %img{src: "assets/images/EDUshifts-logo_onTour_full_blue-01-200x107.png", width: '200', alt: "EDUshifts on tour logo"}
+
+          %p
+            {% for social_network in site.data.social_networks %}
+            %a{href: "{{ social_network[1] }}", target: "_blank"}
+              %img.icon-small(src="assets/images/icons/{{ social_network[0] }}.svg")
+            {% endfor %}
+
+          %p
+            %a{href: "mailto:ahoi@edushifts.world?subject=[book]edushifts"}
+              %strong ahoi@edushifts.world
+
+        .col-sm-7
+          %iframe{allowfullscreen: "", frameborder: "0", height: "315", src: "https://www.youtube.com/embed/I77GLPqxPCk", width: "560"}
+
+%footer
+  .social-networks-section
+    .social-networks
+      {% for social_network in site.data.social_networks %}
+      %a{href: "{{ social_network[1] }}", target: "_blank"}
+        {{ social_network[0] | capitalize}}
+      {% endfor %}
+
+  .copyright-footer.text-center
+    %a{href: "http://www.linkedin.com/in/thaisavelino/", target: "_blank"}>< Thais Avelino
+    ,
+    %a{href: "http://www.linkedin.com/in/maria-popova-96986627/", target: "_blank"} Maria Popova
+    and
+    %a{href: "http://pedromaciel.com", target: "_blank"}
+      Pedro Maciel
+    %br
+    %b Copyright © 2017 EDUshifts

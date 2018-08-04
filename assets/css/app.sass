@@ -9,6 +9,9 @@ $orange: #ffc60b
 $dark-grey: #333333
 $ice: #f1f1f1
 $pink: #e7015e
+$green: #20c350
+$orange: #f7941e
+$black: #000000
 
 // Typography
 $font-family-sans-serif:  "Roboto", Helvetica, Arial, sans-serif
@@ -126,9 +129,54 @@ section
 .author
   height: 650px
 
+// general
+
+.inline
+  display: inline
+
+// text --------------------
+
 .pink-color
   color: $pink
   fill: $pink
+
+.green-color
+  color: $green
+  fill: $green
+
+.orange-color
+  color: $orange
+  fill: $orange
+
+.text-green
+  color: $green
+
+.text-orange
+  color: $orange
+
+.text-pink
+  color: $pink
+
+.text-black
+  color: $black
+
+.text-icon
+  display: inline
+  width: 20px
+
+// borders
+
+.border-black
+  border-color: $black
+
+.border-left-dotted
+  border-left: 1px dotted
+
+
+// images
+
+.img-small
+  max-width: 30%
 
 .social-networks-section
   .social-networks
@@ -154,3 +202,34 @@ section
     font-size: 14px
     color: $white !important
     letter-spacing: 2px
+
+// eduontour page
+
+
+//.background-eot
+//  padding: 0
+//  background-image: url({{ site.baseurl }}../images/bg-eot-shapes.png)
+//  background-color: rgba(255,255,255,0.8)
+//  background-size: 1095px auto
+
+//section.eot
+  //background-color: rgba(255,255,255,0.8)
+
+.main-jumbotron.eot
+  position: relative
+  background: url(../images/edushifts-on-tour.png) no-repeat center
+  background-color: rgb(255,255,255)
+  background-size: contain
+  height: 80vh
+  margin-top: 2em
+
+.eot > h2
+  text-transform: uppercase
+  color: $black
+
+.text-right-art
+  text-align: right
+  color: $green
+  font-size: calc(1.6em + 1vw)  
+  .big
+    font-size: calc(2.3em + 2vw)
