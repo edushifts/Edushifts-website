@@ -1,0 +1,40 @@
+---
+layout: default
+---
+%section.main-jumbotron.index
+  %h1.index.hide Edushifts On Tour
+  %h2.index.hide Presente
+  %h1.index Uniting diverse narratives in education
+
+%section.destaque
+  %h1.index New approach to education needs a new approach to society
+
+%section.index#how
+  %h1.idex How?
+  %p We build a network of networks of changemakers and educational initiatives around the world and foster transformative and self-organized development.
+
+%section.destaque
+  %h1.index Be part of a global movement. Be the change!
+
+%section.index.about-eot#about
+  %h1.idex Our mission
+  %p To connect 1000 people who can change education. Let’s spread love in our society!
+  %h2 Our goal
+  %p In 2018 10.000 transaction taken place, 500 spaces mapped, 200 stories told. Everybody in alternative education knows about this campaign and 15000 EDUshifters support this social experiment.
+
+%section.destaque
+  %h1.idex Who can be part of EDUshifts?
+
+%section.book-authors#authors
+  .container
+    .text-center
+      %h2 Who can be part of EDUshifts?
+
+    .row
+    {% for participants in site.data.who_participate %}
+      .author.text-center.col-sm-4
+        %img.img-circle(src="assets/images/who-edushifts/{{ participants.who | slugify }}.png" width='150' height='150')
+        %h5.pink-color {{ participants.who }}
+        :markdown
+          {{ participants.what }}
+ 	  {% endfor %}
