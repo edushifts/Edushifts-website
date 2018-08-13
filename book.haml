@@ -1,0 +1,122 @@
+---
+layout: default
+---
+{% include navbar.haml %}
+%section.about-the-book-initiative#about-the-book
+  .container
+    .row
+      .col-sm-6.col-sm-offset-3
+        %h2.text-center About the Book Initiative
+        :markdown
+          In 2015, Tathyana Gouvêa, Brazilian educator and entrepreneur,  and Philippe Greier, Austrian founder of the NGO presente!, came up with an idea of a book about the future of education. They invited **16 authors from different countries around the world**, each one a recognised educational thought leader in their field, to share their experiences and worldviews. They put together what has now become an **EDUshifts Now! book - a manual to the transformation of education globally**. In collaboration with an international team of volunteers, translators, editors, illustrators, designers and film-makers, they have produced the book in English and Portuguese. The book was launched in June 2017 at the CONANE conference of Alternative Education in Brasília - Brazil.
+
+%section.the-game#game
+  .container
+    .row
+      .col-sm-offset-6.col-sm-6
+        %h2 Play with us
+
+    .row
+      .col-sm-6
+        %img.img-responsive{src: 'assets/images/edushifts-screenshot.png'}
+
+      .col-sm-6
+        :markdown
+          We create a network of people committed to making foundational shifts in education. We do this by spreading the insights and inspiration of 18 courageous educational thought leaders through the EDUshifts book which is passed from one changemaker to the next.
+
+          There are 1000 copies available. When they are intentionally passed around the world their reach magnifies to thousands. Each interaction adds value and more stories to the book.
+
+          This way we create impactful connections and build a global community of supporters who are seeking a transformation in education.
+
+%section.the-game-is-simple.bullets
+  .container
+    %h2.text-center The game is simple:
+
+    .row
+      {% for bullet in site.data.the_game_is_simple %}
+      .col-sm-4.text-center
+        %img.icon(src="assets/images/icons/{{ bullet.icon }}.svg")
+
+        %h3 {{ bullet.title }}
+        :markdown
+          {{ bullet.description }}
+      {% endfor %}
+
+%section.book-content#content
+  .row
+    .container
+      .row
+        .col-sm-6.col-sm-offset-3
+          %h2.text-center Book Content
+          %h3 Synopsis
+
+          What are we waiting for? What is holding us back? What do we still need to know? Fundamental societal challenges ask for new approaches to education. Many schools and universities are changing tremendously and opening ways to different forms of education. A growing movement is gaining momentum.  But what is missing to make the education shift happen on a large scale?
+
+          We explore the future of education, the changes that are happening already, and how different communities collaborate beyond existing structures and paradigms. Be it a Montessori model, a Democratic model or a traditional school system model: it is important people have a choice of the pathways they pick to be educated. Adopting a multicultural and interdisciplinary approach enables us to create unique learning environments. As we come together, forming networks based on our concerns about the future, we find the strength and wisdom needed to create a viable human future in the 21st century and live in the world where we can freely explore our full potential and are empowered to make decisions affecting our everyday lives.
+
+          %a(href="javascript:void(0)" data-show="#book-text") Read more
+
+          #book-text
+            {% capture book_content %}{% include_relative _texts/book_content.md %}{% endcapture %}
+            {{ book_content | markdownify | strip_newlines }}
+
+            %h3 Get your book to read more!
+
+      .row
+        %br
+        .col-sm-6.col-sm-offset-3
+          %a.btn.btn-primary{href: "https://edushifts.world/ebooks/EDUshiftsNow_BP.pdf"}
+            Read the Portuguese version online
+
+%section.get-news
+  .container
+    %h2.text-center Get news in your mailbox
+    .row
+      .col-sm-4.col-sm-offset-4
+        %form(action="//world.us16.list-manage.com/subscribe/post?u=4fb16c76a798800052ceeadfe&amp;id=84eb5b8ebd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="")
+
+          .form-group
+            %input.form-control{name: "EMAIL", placeholder: "you@example.com", type: "email", value: ""}
+            %div{"aria-hidden" => "true", style: "position: absolute; left: -5000px;"}
+          .form-group
+            %input.btn.btn-primary.form-control{name: "subscribe", type: "submit", value: "Subscribe now"}
+
+%section.get-in-touch#contact
+  .container
+    .row
+      .col-sm-5
+        %h4 Get in touch with us
+
+        %p
+          %img{src: "assets/images/EDUshifts_logo_full_200x107.png", width: '200'}
+
+        %p
+          {% for social_network in site.data.social_networks %}
+          %a{href: "{{ social_network[1] }}", target: "_blank"}
+            %img.icon-small(src="assets/images/icons/{{ social_network[0] }}.svg")
+          {% endfor %}
+
+        %p
+          %a{href: "mailto:ahoi@edushifts.world?subject=[book]edushifts"}
+            %strong ahoi@edushifts.world
+
+      .col-sm-7
+        %iframe{allowfullscreen: "", frameborder: "0", height: "315", src: "https://www.youtube.com/embed/I77GLPqxPCk", width: "560"}
+
+%footer
+  .social-networks-section
+    .social-networks
+      {% for social_network in site.data.social_networks %}
+      %a{href: "{{ social_network[1] }}", target: "_blank"}
+        {{ social_network[0] | capitalize}}
+      {% endfor %}
+
+  .copyright-footer.text-center
+    %a{href: "http://www.linkedin.com/in/thaisavelino/", target: "_blank"}>< Thais Avelino
+    ,
+    %a{href: "http://www.linkedin.com/in/maria-popova-96986627/", target: "_blank"} Maria Popova
+    and
+    %a{href: "http://pedromaciel.com", target: "_blank"}
+      Pedro Maciel
+    %br
+    %b Copyright © 2017 EDUshifts

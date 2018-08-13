@@ -5808,6 +5808,9 @@ h1, h2, h3, h4, h5 {
 h5 {
   text-transform: uppercase; }
 
+.strong {
+  font-weight: 700; }
+
 section {
   padding-top: 80px;
   padding-bottom: 80px; }
@@ -5851,9 +5854,6 @@ section {
 .outlook-to-the-future {
   background-color: #f1f1f1; }
 
-.get-in-touch {
-  background-color: #f7941e; }
-
 .navbar .btn-primary {
   background-color: #f7941e;
   color: #333333; }
@@ -5881,7 +5881,7 @@ section {
   height: 32px; }
 
 .author {
-  height: 650px; }
+  padding-bottom: 20px; }
 
 .inline {
   display: inline; }
@@ -5939,11 +5939,14 @@ section {
 
 .copyright-footer, .copyright-footer a {
   font-family: Arial;
-  background-color: #e7015e;
+  background-color: #f7941e;
   padding: 20px 0;
   font-size: 14px;
-  color: #fff !important;
+  color: #0f2a60 !important;
   letter-spacing: 2px; }
+
+.background-eot {
+  padding: 0; }
 
 .main-jumbotron.eot {
   position: relative;
@@ -5971,3 +5974,24 @@ section {
   background-size: contain;
   height: 80vh;
   margin-top: 2em; }
+
+.inline {
+  display: inline; }
+
+.text-center {
+  text-align: center; }
+
+.block {
+  display: block; }
+
+.destaque-presente {
+  margin-top: 50px; }
+
+section .get-news {
+  background-color: #20c350 !important; }
+  section .get-news h2 {
+    color: #fff; }
+  section .get-news .btn-primary {
+    background-color: #f7941e;
+    border-color: #f7941e;
+    color: #fff; }

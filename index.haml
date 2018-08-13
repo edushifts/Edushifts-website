@@ -24,38 +24,6 @@ layout: default
           {{ core_value.description }}
       {% endfor %}
 
-%section.the-game#game
-  .container
-    .row
-      .col-sm-offset-6.col-sm-6
-        %h2 The Game
-
-    .row
-      .col-sm-6
-        %img.img-responsive{src: 'assets/images/edushifts-screenshot.png'}
-
-      .col-sm-6
-        :markdown
-          We create a network of people committed to making foundational shifts in education. We do this by spreading the insights and inspiration of 18 courageous educational thought leaders through the EDUshifts book which is passed from one changemaker to the next.
-
-          There are 1000 copies available. When they are intentionally passed around the world their reach magnifies to thousands. Each interaction adds value and more stories to the book.
-
-          This way we create impactful connections and build a global community of supporters who are seeking a transformation in education.
-
-%section.the-game-is-simple.bullets
-  .container
-    %h2.text-center The game is simple:
-
-    .row
-      {% for bullet in site.data.the_game_is_simple %}
-      .col-sm-4.text-center
-        %img.icon(src="assets/images/icons/{{ bullet.icon }}.svg")
-
-        %h3 {{ bullet.title }}
-        :markdown
-          {{ bullet.description }}
-      {% endfor %}
-
 %section.outlook-to-the-future#future
   .container
     %h2 Outlook to the Future
@@ -83,69 +51,9 @@ layout: default
 
           Transforming society means transforming education. Transforming education means breaking patterns and realities that we have been building up for centuries. Does it sound like something you’d be part of? Do you want to share your story? Then [click here](http://edushifts.slack.com).
 
-%section.about-the-book-initiative#about-the-book
-  .container
-    .row
-      .col-sm-6.col-sm-offset-3
-        %h2.text-center About the Book Initiative
-        :markdown
-          In 2015, Tathyana Gouvêa, Brazilian educator and entrepreneur,  and Philippe Greier, Austrian founder of the NGO presente!, came up with an idea of a book about the future of education. They invited **16 authors from different countries around the world**, each one a recognised educational thought leader in their field, to share their experiences and worldviews. They put together what has now become an **EDUshifts Now! book - a manual to the transformation of education globally**. In collaboration with an international team of volunteers, translators, editors, illustrators, designers and film-makers, they have produced the book in English and Portuguese. The book was launched in June 2017 at the CONANE conference of Alternative Education in Brasília - Brazil.
-
-%section.book-authors#authors
-  .container
-    .text-center
-      %h2 Book Authors
-      %h3 18 educational thought leaders from around the world
-
-    .row
-    {% for author in site.data.book_authors %}
-      .author.text-center.col-sm-4
-        %img.img-circle(src="assets/images/authors/{{ author.name | slugify }}.jpg" width='150' height='150')
-        %h5.pink-color {{ author.name }}
-        :markdown
-          {{ author.bio }}
-
-        {% if author.twitter %}
-        %a(href="{{ author.twitter }}")
-          %img.icon.pink-color(src="assets/images/icons/twitter-pink.svg")
-        {% endif %}
-
-        {% if author.linkedin %}
-        %a(href="{{ author.linkedin }}")
-          %img.icon.pink-color(src="assets/images/icons/linkedin.svg")
-        {% endif %}
-
-      {% endfor %}
-
-%section.book-content#content
-  .row
-    .container
-      .row
-        .col-sm-6.col-sm-offset-3
-          %h2.text-center Book Content
-          %h3 Synopsis
-
-          What are we waiting for? What is holding us back? What do we still need to know? Fundamental societal challenges ask for new approaches to education. Many schools and universities are changing tremendously and opening ways to different forms of education. A growing movement is gaining momentum.  But what is missing to make the education shift happen on a large scale?
-
-          We explore the future of education, the changes that are happening already, and how different communities collaborate beyond existing structures and paradigms. Be it a Montessori model, a Democratic model or a traditional school system model: it is important people have a choice of the pathways they pick to be educated. Adopting a multicultural and interdisciplinary approach enables us to create unique learning environments. As we come together, forming networks based on our concerns about the future, we find the strength and wisdom needed to create a viable human future in the 21st century and live in the world where we can freely explore our full potential and are empowered to make decisions affecting our everyday lives.
-
-          %a(href="javascript:void(0)" data-show="#book-text") Read more
-
-          #book-text
-            {% capture book_content %}{% include_relative _texts/book_content.md %}{% endcapture %}
-            {{ book_content | markdownify | strip_newlines }}
-
-            %h3 Get your book to read more!
-
-      .row
-        %br
-        .col-sm-6.col-sm-offset-3
-          %a.btn.btn-primary{href: "https://edushifts.world/ebooks/EDUshiftsNow_BP.pdf"}
-            Read the Portuguese version online
-
 %section.get-news
   .container
-    %h2.text-center Get news in your mailbox
+    %h2.text-center.white DO YOU WANT TO SHIFT WITH US
     .row
       .col-sm-4.col-sm-offset-4
         %form(action="//world.us16.list-manage.com/subscribe/post?u=4fb16c76a798800052ceeadfe&amp;id=84eb5b8ebd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="")

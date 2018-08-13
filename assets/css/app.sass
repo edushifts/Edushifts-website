@@ -12,6 +12,7 @@ $pink: #e7015e
 $green: #20c350
 $orange: #f7941e
 $black: #000000
+$yellow: #f7941e
 
 // Typography
 $font-family-sans-serif:  "Roboto", Helvetica, Arial, sans-serif
@@ -48,6 +49,9 @@ h1, h2, h3, h4, h5
 
 h5
   text-transform: uppercase
+
+.strong
+  font-weight: 700
 
 section
   padding-top: 80px
@@ -96,9 +100,6 @@ section
 .outlook-to-the-future
   background-color: $ice
 
-.get-in-touch
-  background-color: $orange
-
 .navbar
   .btn-primary
     background-color: $orange
@@ -127,7 +128,7 @@ section
   height: 32px
 
 .author
-  height: 650px
+  padding-bottom: 20px
 
 // general
 
@@ -197,17 +198,17 @@ section
 .copyright-footer
   &, a
     font-family: Arial
-    background-color: $pink
+    background-color: $yellow
     padding: 20px 0
     font-size: 14px
-    color: $white !important
+    color: $dark-blue !important
     letter-spacing: 2px
 
 // eduontour page
 
 
-//.background-eot
-//  padding: 0
+.background-eot
+  padding: 0
 //  background-image: url({{ site.baseurl }}../images/bg-eot-shapes.png)
 //  background-color: rgba(255,255,255,0.8)
 //  background-size: 1095px auto
@@ -243,3 +244,27 @@ section
   background-size: contain
   height: 80vh
   margin-top: 2em
+
+// geral
+
+.inline
+  display: inline
+
+.text-center
+  text-align: center
+
+.block
+  display: block
+
+.destaque-presente
+  margin-top: 50px
+
+section
+  .get-news
+    background-color: $green!important
+    h2
+      color: $white
+    .btn-primary
+      background-color: $orange
+      border-color: $orange
+      color: $white
