@@ -59,7 +59,7 @@ layout: default
         %form(action="//world.us16.list-manage.com/subscribe/post?u=4fb16c76a798800052ceeadfe&amp;id=84eb5b8ebd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="")
 
           .form-group
-            %input.form-control{name: "EMAIL", placeholder: "you@example.com", type: "email", value: ""}
+            %input.form-control{name: "EMAIL", placeholder: "you@yourmail.com", type: "email", value: ""}
             %div{"aria-hidden" => "true", style: "position: absolute; left: -5000px;"}
           .form-group
             %input.btn.btn-primary.form-control{name: "subscribe", type: "submit", value: "Subscribe now"}
@@ -80,26 +80,10 @@ layout: default
           {% endfor %}
 
         %p
-          %a{href: "mailto:ahoi@edushifts.world?subject=[book]edushifts"}
+          %a{href: "mailto:ahoi@edushifts.world?subject=[index]edushifts"}
             %strong ahoi@edushifts.world
 
       .col-sm-7
-        %iframe{allowfullscreen: "", frameborder: "0", height: "315", src: "https://www.youtube.com/embed/I77GLPqxPCk", width: "560"}
+        %img.img-responsive(src="assets/images/edushifts-crew-2.png")
 
-%footer
-  .social-networks-section
-    .social-networks
-      {% for social_network in site.data.social_networks %}
-      %a{href: "{{ social_network[1] }}", target: "_blank"}
-        {{ social_network[0] | capitalize}}
-      {% endfor %}
-
-  .copyright-footer.text-center
-    %a{href: "http://www.linkedin.com/in/thaisavelino/", target: "_blank"}>< Thais Avelino
-    ,
-    %a{href: "http://www.linkedin.com/in/maria-popova-96986627/", target: "_blank"} Maria Popova
-    and
-    %a{href: "http://pedromaciel.com", target: "_blank"}
-      Pedro Maciel
-    %br
-    %b Copyright © 2017 EDUshifts
+{% include footer.haml %}

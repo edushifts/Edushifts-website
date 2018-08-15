@@ -5836,9 +5836,9 @@ section {
     .main-jumbotron .text p {
       font-weight: 300; }
 
-.about-the-book-initiative, .book-content {
-  background-color: #0f2a60;
-  color: #fff; }
+.about-the-book-initiative {
+  background-color: #f7941e;
+  color: #333333; }
 
 .fund-one-copy {
   padding: 120px 0;
@@ -5858,7 +5858,7 @@ section {
   background-color: #f7941e;
   color: #333333; }
 
-.the-game {
+.the-game, .book-content {
   background-color: #f1f1f1; }
 
 .the-game-is-simple {
@@ -5891,15 +5891,15 @@ section {
   fill: #e7015e; }
 
 .green-color {
-  color: #20c350;
-  fill: #20c350; }
+  color: #4CAF50;
+  fill: #4CAF50; }
 
 .orange-color {
   color: #f7941e;
   fill: #f7941e; }
 
 .text-green {
-  color: #20c350; }
+  color: #4CAF50; }
 
 .text-orange {
   color: #f7941e; }
@@ -5923,6 +5923,29 @@ section {
 .img-small {
   max-width: 30%; }
 
+.main-jumbotron.index {
+  position: relative;
+  background: url(../images/edushifts-on-tour.png) no-repeat center;
+  background-color: white;
+  background-size: contain;
+  height: 80vh;
+  margin-top: 2em; }
+
+.destaque-presente {
+  margin-top: 50px; }
+
+.get-news {
+  background-color: #0f2a60 !important; }
+  .get-news h2 {
+    color: #fff; }
+  .get-news .btn-primary {
+    background-color: #f7941e;
+    border-color: #f7941e;
+    color: #fff; }
+
+.get-in-touch#contact {
+  background-color: #f1f1f1; }
+
 .social-networks-section .social-networks {
   max-width: 600px;
   display: flex;
@@ -5939,7 +5962,7 @@ section {
 
 .copyright-footer, .copyright-footer a {
   font-family: Arial;
-  background-color: #f7941e;
+  background-color: #ffc60b;
   padding: 20px 0;
   font-size: 14px;
   color: #0f2a60 !important;
@@ -5962,18 +5985,10 @@ section {
 
 .text-right-art {
   text-align: right;
-  color: #20c350;
+  color: #4CAF50;
   font-size: calc(1.6em + 1vw); }
   .text-right-art .big {
     font-size: calc(2.3em + 2vw); }
-
-.main-jumbotron.index {
-  position: relative;
-  background: url(../images/edushifts-on-tour.png) no-repeat center;
-  background-color: white;
-  background-size: contain;
-  height: 80vh;
-  margin-top: 2em; }
 
 .inline {
   display: inline; }
@@ -5983,15 +5998,3 @@ section {
 
 .block {
   display: block; }
-
-.destaque-presente {
-  margin-top: 50px; }
-
-section .get-news {
-  background-color: #20c350 !important; }
-  section .get-news h2 {
-    color: #fff; }
-  section .get-news .btn-primary {
-    background-color: #f7941e;
-    border-color: #f7941e;
-    color: #fff; }

@@ -20,7 +20,7 @@ layout: default
             Executive 2018
             %br/
             %span.big
-              Brasil
+              Brazil
               %span
 
         .col-sm-6.border-left-dotted
@@ -62,8 +62,9 @@ layout: default
             **Locations:** Rio de Janeiro and São Paulo.
             **Your investment:** 
             Please contact us for further information:
-            __philippe@present-e.org__
-
+          %a.strong.text-black{href: "mailto:philippe@present-e.org?subject=[eotx]details/values"}
+            philippe@present-e.org
+          :markdown
             We use a Pay-it-Forward and Solidarity Economy Model for promising talents with high ambitions. Your investment will make it possible for one more social entrepreneur in need of financial support can join the tour.
 
             **Included in this lifetime adventure:**
@@ -73,7 +74,7 @@ layout: default
             
             **Optional:** After the tour we invite the participants to join a 5 days retreat in the magnificent and vibrant nature of ALTO PARAÍSO.
             More information upon request.
- 
+
   %div.eot#our-mission
     .container
       .row
@@ -94,7 +95,9 @@ layout: default
             READY FOR YOUR
             %span.text-green ADVENTURE OF A LIFETIME?
           Find out this experience is a good fit for you. Reach out for Philippe Greier
-          %span.text-orange.strong philippe@present-e.org
+          %span
+            %a{href: "mailto:philippe@present-e.org?subject=[eotx]edushifts"}
+              .text-orange.strong philippe@present-e.org
             
         .col-md-6.col-sm-12
           %h2.eot WHO ARE WE?
@@ -139,26 +142,10 @@ layout: default
             {% endfor %}
 
           %p
-            %a{href: "mailto:ahoi@edushifts.world?subject=[book]edushifts"}
+            %a{href: "mailto:ahoi@edushifts.world?subject=[eotx]edushifts"}
               %strong ahoi@edushifts.world
 
         .col-sm-7
           %img.img-responsive(src="assets/images/edushifts-crew-2.png")
 
-%footer
-  .social-networks-section
-    .social-networks
-      {% for social_network in site.data.social_networks %}
-      %a{href: "{{ social_network[1] }}", target: "_blank"}
-        {{ social_network[0] | capitalize}}
-      {% endfor %}
-
-  .copyright-footer.text-center
-    %a{href: "http://www.linkedin.com/in/thaisavelino/", target: "_blank"}>< Thais Avelino
-    ,
-    %a{href: "http://www.linkedin.com/in/maria-popova-96986627/", target: "_blank"} Maria Popova
-    and
-    %a{href: "http://pedromaciel.com", target: "_blank"}
-      Pedro Maciel
-    %br
-    %b Copyright © 2018 EDUshifts
+{% include footer.haml %}

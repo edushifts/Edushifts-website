@@ -6,7 +6,7 @@ layout: default
   .container
     .row
     {% for team in site.data.eot_team %}
-      .author.text-center.col-md-6
+      .author.text-center.col-md-6.col-sm-12
         %img.img-square(src="assets/images/team/{{ team.name | slugify }}.jpg" width='150' height='150')
         %h5.orange-color {{ team.name }}
         :markdown
@@ -24,42 +24,4 @@ layout: default
 
       {% endfor %}
 
-%section.book-authors#authors
-  .container
-    .row
-    {% for author in site.data.book_authors %}
-      .author.text-center.col-sm-4
-        %img.img-circle(src="assets/images/authors/{{ author.name | slugify }}.jpg" width='150' height='150')
-        %h5.pink-color {{ author.name }}
-        :markdown
-          {{ author.bio }}
-
-        {% if author.twitter %}
-        %a(href="{{ author.twitter }}")
-          %img.icon.pink-color(src="assets/images/icons/twitter-pink.svg")
-        {% endif %}
-
-        {% if author.linkedin %}
-        %a(href="{{ author.linkedin }}")
-          %img.icon.pink-color(src="assets/images/icons/linkedin.svg")
-        {% endif %}
-
-      {% endfor %}
-
-%footer
-  .social-networks-section
-    .social-networks
-      {% for social_network in site.data.social_networks %}
-      %a{href: "{{ social_network[1] }}", target: "_blank"}
-        {{ social_network[0] | capitalize}}
-      {% endfor %}
-
-  .copyright-footer.text-center
-    %a{href: "http://www.linkedin.com/in/thaisavelino/", target: "_blank"}>< Thais Avelino
-    ,
-    %a{href: "http://www.linkedin.com/in/maria-popova-96986627/", target: "_blank"} Maria Popova
-    and
-    %a{href: "http://pedromaciel.com", target: "_blank"}
-      Pedro Maciel
-    %br
-    %b Copyright © 2017 EDUshifts
+{% include footer.haml %}

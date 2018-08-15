@@ -1,0 +1,17 @@
+%footer
+  .social-networks-section
+    .social-networks
+      {% for social_network in site.data.social_networks %}
+      %a{href: "{{ social_network[1] }}", target: "_blank"}
+        {{ social_network[0] | capitalize}}
+      {% endfor %}
+
+  .copyright-footer.text-center
+    %a{href: "http://www.linkedin.com/in/thaisavelino/", target: "_blank"}>< Thais Avelino
+    ,
+    %a{href: "http://www.linkedin.com/in/maria-popova-96986627/", target: "_blank"} Maria Popova
+    and
+    %a{href: "http://pedromaciel.com", target: "_blank"}
+      Pedro Maciel
+    %br
+    %b Copyright © 2018 EDUshifts

@@ -9,6 +9,12 @@ layout: default
         %h2.text-center About the Book Initiative
         :markdown
           In 2015, Tathyana Gouvêa, Brazilian educator and entrepreneur,  and Philippe Greier, Austrian founder of the NGO presente!, came up with an idea of a book about the future of education. They invited **16 authors from different countries around the world**, each one a recognised educational thought leader in their field, to share their experiences and worldviews. They put together what has now become an **EDUshifts Now! book - a manual to the transformation of education globally**. In collaboration with an international team of volunteers, translators, editors, illustrators, designers and film-makers, they have produced the book in English and Portuguese. The book was launched in June 2017 at the CONANE conference of Alternative Education in Brasília - Brazil.
+        %a.btn.btn-primary.btn-sm{href: "https://now.edushifts.world/", target: "_blank"}
+          Track the books
+        %a.btn.btn-primary.btn-sm{href: "https://edushifts.world/ebooks/EDUshiftsNow_BP.pdf", target: "_blank"}
+          Portuguese eBook
+        %a.btn.btn-primary.btn-sm{href: "assets/ebooks/EDUshiftsNow_Eng.pdf", target: "_blank"}
+          English eBook
 
 %section.the-game#game
   .container
@@ -27,6 +33,8 @@ layout: default
           There are 1000 copies available. When they are intentionally passed around the world their reach magnifies to thousands. Each interaction adds value and more stories to the book.
 
           This way we create impactful connections and build a global community of supporters who are seeking a transformation in education.
+        %a.btn.btn-primary.btn-sm{href: "https://now.edushifts.world/", target: "_blank"}
+          Track the books
 
 %section.the-game-is-simple.bullets
   .container
@@ -101,22 +109,6 @@ layout: default
             %strong ahoi@edushifts.world
 
       .col-sm-7
-        %iframe{allowfullscreen: "", frameborder: "0", height: "315", src: "https://www.youtube.com/embed/I77GLPqxPCk", width: "560"}
+        %img.img-responsive(src="assets/images/edushifts-crew-2.png")
 
-%footer
-  .social-networks-section
-    .social-networks
-      {% for social_network in site.data.social_networks %}
-      %a{href: "{{ social_network[1] }}", target: "_blank"}
-        {{ social_network[0] | capitalize}}
-      {% endfor %}
-
-  .copyright-footer.text-center
-    %a{href: "http://www.linkedin.com/in/thaisavelino/", target: "_blank"}>< Thais Avelino
-    ,
-    %a{href: "http://www.linkedin.com/in/maria-popova-96986627/", target: "_blank"} Maria Popova
-    and
-    %a{href: "http://pedromaciel.com", target: "_blank"}
-      Pedro Maciel
-    %br
-    %b Copyright © 2017 EDUshifts
+{% include footer.haml %}
