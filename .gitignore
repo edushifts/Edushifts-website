@@ -36,8 +36,6 @@ Vagrantfile
 # Ignore deploy related files
 deploy
 
-Gemfile.lock
-
 ## Ignore Jekyll related files
 _site/
 .sass-cache/
