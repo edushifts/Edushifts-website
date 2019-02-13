@@ -7,7 +7,7 @@ layout: default
     .row
     {% for team in site.data.eot_team %}
       .author.text-center.col-md-6.col-sm-12
-        %img.img-square(src="assets/images/team/{{ team.name | slugify }}.jpg" width='150' height='150')
+        %img.img-square(src="assets/images/team/{{ team.name | slugify: 'ascii' }}.jpg" width='150' height='150')
         %h5.orange-color {{ team.name }}
         :markdown
           {{ team.bio }}
